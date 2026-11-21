@@ -1,6 +1,7 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "tejveer-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio of Tejveer Singh — Full-Stack Developer & Generative AI Engineer",
   "private": true,
   "scripts": {
     "dev": "next dev",
