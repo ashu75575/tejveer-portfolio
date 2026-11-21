@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Pixelify+Sans:wght@400..700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --ink: #141518;
+  --navy: #1e2535;
+  --olive: #485242;
+  --olive-light: #5a6652;
+  --ivory: #f2ede6;
+  --ivory-muted: #b8b2a7;
+  --sage: #7d8773;
+  --terracotta: #c0392b;
+  --terracotta-light: #d9534f;
+  --surface: #1e2025;
+  --hairline: rgba(242, 237, 230, 0.1);
+  --font-bbh: 'BBH Bogle', sans-serif;
+  --font-pixel: 'Pixelify Sans', sans-serif;
+}
+
+@theme {
+  --color-ink: #141518;
+  --color-navy: #1e2535;
+  --color-olive: #485242;
+  --color-olive-light: #5a6652;
+  --color-ivory: #f2ede6;
+  --color-ivory-muted: #b8b2a7;
+  --color-sage: #7d8773;
+  --color-terracotta: #c0392b;
+  --color-terracotta-light: #d9534f;
+  --color-surface: #1e2025;
+  --color-hairline: rgba(242, 237, 230, 0.1);
+
+  --font-display: 'BBH Bogle', var(--font-display), 'Oswald', 'Anton', sans-serif;
+  --font-body: var(--font-body), 'Manrope', sans-serif;
+  --font-bbh: 'BBH Bogle', sans-serif;
+  --font-pixel: 'Pixelify Sans', sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+}
+
+/* Explicit font family utilities */
+.font-display {
+  font-family: 'BBH Bogle', var(--font-display), 'Oswald', 'Anton', sans-serif !important;
+}
+
+.font-bbh {
+  font-family: 'BBH Bogle', sans-serif !important;
+}
+
+.font-pixel {
+  font-family: 'Pixelify Sans', sans-serif !important;
+}
+
+.font-body {
+  font-family: var(--font-body), 'Manrope', system-ui, sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body {
+  background-color: var(--ink);
+  color: var(--ivory);
+  font-family: var(--font-body), system-ui, sans-serif;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #c4ccd4;
+  color: #141518;
+}
+
+::-moz-selection {
+  background-color: #c4ccd4;
+  color: #141518;
+}
